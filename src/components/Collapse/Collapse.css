@@ -1,0 +1,114 @@
+@import '../../utils/style/colors.css';
+
+.collapse {
+   width: 100%;
+}
+
+.collapse_container {
+   margin-bottom: 30px;
+}
+
+.collapse_header {
+   height: 50px;
+   background-color: var(--primary-color);
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+}
+
+.collapse_title {
+   margin: 0;
+   font-weight: 400;
+   color: white;
+}
+
+.collapse_title--about {
+   font-size: 24px;
+}
+
+.collapse_title--location {
+   font-size: 18px;
+}
+
+.collapse_arrow {
+   position: relative;
+   width: 30px;
+   height: 30px;
+}
+
+.collapse_arrow--closed::before, .collapse_arrow--closed::after {
+   width: 3px;
+   height: 18px;
+   border-radius: 3px;
+   background: white;
+   content: " ";
+   position: absolute;
+   top: 6px;
+   z-index: 1;
+   transition: all 100ms ease-in-out;
+}
+
+.collapse_arrow--closed::before {
+   left: 0px;
+   transform: translate(-5px, 0) rotate(-45deg);
+}
+
+.collapse_arrow--closed::after {
+   left: 6px;
+   transform: translate(0, 0) rotate(45deg);
+}
+
+.collapse_arrow--open::before, .collapse_arrow--open::after {
+   width: 3px;
+   height: 18px;
+   border-radius: 3px;
+   background: white;
+   content: " ";
+   position: absolute;
+   top: 6px;
+   z-index: 1;
+   transition: all 100ms ease-in-out;
+}
+
+.collapse_arrow--open::before {
+   left: 0px;
+   transform: translate(-5px, 0) rotate(45deg);
+}
+
+.collapse_arrow--open::after {
+   left: 6px;
+   transform: translate(0, 0) rotate(-45deg);
+}
+
+.collapse_description {
+   background-color: var(--background-color);
+   padding: 20px;
+   border-radius: 5px;
+   display: none;
+   transform: translateY(-100%);
+   transition: all 100ms ease-in-out;
+}
+
+.collapse_header--open ~ .collapse_description {
+   display: block;
+   transform: translateY(0);
+}
+
+.collapse_text {
+   margin: 0;
+   font-weight: 400;
+   color: var(--primary-color);
+}
+
+.collapse_text--about {
+   font-size: 24px;
+}
+
+.collapse_text--location {
+   font-size: 18px;
+}

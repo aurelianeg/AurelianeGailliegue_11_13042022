@@ -1,0 +1,43 @@
+@import '../../utils/style/colors.css';
+
+.header_container {
+   height: 70px;
+   margin-top: 40px;
+   margin-bottom: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header_logo {
+   width: 200px;
+}
+
+.header_logo path {
+   fill: var(--primary-color);
+   color: var(--primary-color);
+}
+
+.nav_container {
+   height: 100px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.nav_link {
+   width: 140px;
+   margin-left: 60px;
+   font-size: 24px;
+   font-weight: 500;
+   color: var(--primary-color);
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   text-decoration: none;
+}
+
+.nav_link.active {
+   text-decoration: underline;
+}
