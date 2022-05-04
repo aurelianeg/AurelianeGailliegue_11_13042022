@@ -57,9 +57,19 @@ function Collapse(props) {
                   ></div>
                </div>
                <div className="collapse_description">
-                  <p className="collapse_text collapse_text--location">
-                     {props.description}
-                  </p>
+                  {props.title === 'Équipements' ? (
+                     <ul className="collapse_list collapse_text collapse_text--location">
+                        {props.description.map((equipment, index) => {
+                           return (
+                              <li key={'equipment_' + index}>{equipment}</li>
+                           )
+                        })}
+                     </ul>
+                  ) : (
+                     <p className="collapse_text collapse_text--location">
+                        {props.description}
+                     </p>
+                  )}
                </div>
             </div>
          )}

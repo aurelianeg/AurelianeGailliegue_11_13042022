@@ -112,3 +112,8 @@
 .collapse_text--location {
    font-size: 18px;
 }
+
+.collapse_list {
+   list-style: none;
+   padding-left: 0;
+}

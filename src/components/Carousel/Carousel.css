@@ -1,0 +1,82 @@
+@import '../../utils/style/colors.css';
+
+.carousel_container {
+   width: 100%;
+   height: 415px;
+   border-radius: 25px;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.carousel_img {
+   width: 100%;
+   object-fit: cover;
+}
+
+.carousel_count {
+   font-size: 18px;
+   color: white;
+   text-shadow: 0px 0px 5px black;
+   position: absolute;
+   bottom: 25px;
+}
+
+.carousel_previous, .carousel_next {
+   width: 60px;
+   height: 100px;
+   position: absolute;
+   top: calc(50% - 50px);
+}
+
+.carousel_previous {
+   left: 15px;
+}
+
+.carousel_next {
+   left: calc(100% - 60px - 20px);
+}
+
+.carousel_previous::before, .carousel_previous::after {
+   width: 10px;
+   height: 60px;
+   border-radius: 3px;
+   background: white;
+   content: " ";
+   position: absolute;
+   left: 25px;
+   z-index: 1;
+}
+
+.carousel_previous::before {
+   top: 37px;
+   transform: translate(0, 0) rotate(-45deg);
+}
+
+.carousel_previous::after {
+   top: 2px;
+   transform: translate(0, 0) rotate(45deg);
+}
+
+.carousel_next::before, .carousel_next::after {
+   width: 10px;
+   height: 60px;
+   border-radius: 3px;
+   background: white;
+   content: " ";
+   position: absolute;
+   left: 25px;
+   z-index: 1;
+}
+
+.carousel_next::before {
+   top: 37px;
+   transform: translate(0, 0) rotate(45deg);
+}
+
+.carousel_next::after {
+   top: 2px;
+   transform: translate(0, 0) rotate(-45deg);
+}
