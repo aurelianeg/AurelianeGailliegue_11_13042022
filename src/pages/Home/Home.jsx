@@ -20,7 +20,12 @@ function Home() {
          ) : (
             <section className="locations_container">
                {data.map((loc) => (
-                  <LocPreview key={loc.id} title={loc.title} />
+                  <LocPreview
+                     key={loc.id}
+                     id={loc.id}
+                     cover={loc.cover}
+                     title={loc.title}
+                  />
                ))}
                {isMultipleThree ? '' : <div className="empty_div"></div>}
             </section>
