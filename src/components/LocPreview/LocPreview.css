@@ -34,7 +34,7 @@
    position: relative;
    object-fit: cover;
    transform: scale(1);
-   transition: all 500ms ease-in-out;
+   transition: all 350ms ease-in-out;
    mix-blend-mode: darken;
    z-index: 0;
 }
