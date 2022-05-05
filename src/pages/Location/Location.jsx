@@ -57,12 +57,12 @@ function Location() {
                      </div>
                      <div className="description">
                         <Collapse
-                           page="location"
+                           size="half"
                            title="Description"
                            description={foundLocation.description}
                         />
                         <Collapse
-                           page="location"
+                           size="half"
                            title="Équipements"
                            description={foundLocation.equipments}
                         />

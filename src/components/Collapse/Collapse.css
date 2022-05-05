@@ -27,11 +27,11 @@
    color: white;
 }
 
-.collapse_title--about {
+.collapse_title--full {
    font-size: 24px;
 }
 
-.collapse_title--location {
+.collapse_title--half {
    font-size: 18px;
 }
 
@@ -105,11 +105,11 @@
    color: var(--primary-color);
 }
 
-.collapse_text--about {
+.collapse_text--full {
    font-size: 24px;
 }
 
-.collapse_text--location {
+.collapse_text--half {
    font-size: 18px;
 }
 

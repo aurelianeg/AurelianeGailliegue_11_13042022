@@ -8,7 +8,7 @@ function Collapse(props) {
    }
    return (
       <div className="collapse">
-         {props.page === 'about' ? (
+         {props.size === 'full' ? (
             <div className="collapse_container">
                <div
                   className={
@@ -18,7 +18,7 @@ function Collapse(props) {
                   }
                   onClick={toggleClick}
                >
-                  <h1 className="collapse_title collapse_title--about">
+                  <h1 className="collapse_title collapse_title--full">
                      {props.title}
                   </h1>
                   <div
@@ -30,7 +30,7 @@ function Collapse(props) {
                   ></div>
                </div>
                <div className="collapse_description">
-                  <p className="collapse_text collapse_text--about">
+                  <p className="collapse_text collapse_text--full">
                      {props.description}
                   </p>
                </div>
@@ -45,7 +45,7 @@ function Collapse(props) {
                   }
                   onClick={toggleClick}
                >
-                  <h1 className="collapse_title collapse_title--location">
+                  <h1 className="collapse_title collapse_title--half">
                      {props.title}
                   </h1>
                   <div
@@ -58,7 +58,7 @@ function Collapse(props) {
                </div>
                <div className="collapse_description">
                   {props.title === 'Équipements' ? (
-                     <ul className="collapse_list collapse_text collapse_text--location">
+                     <ul className="collapse_list collapse_text collapse_text--half">
                         {props.description.map((equipment, index) => {
                            return (
                               <li key={'equipment_' + index}>{equipment}</li>
@@ -66,7 +66,7 @@ function Collapse(props) {
                         })}
                      </ul>
                   ) : (
-                     <p className="collapse_text collapse_text--location">
+                     <p className="collapse_text collapse_text--half">
                         {props.description}
                      </p>
                   )}

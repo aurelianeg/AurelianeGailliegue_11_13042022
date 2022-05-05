@@ -2,7 +2,6 @@ import { useFetch } from '../../utils/hooks/useFetch'
 import Banner from '../../components/Banner/Banner'
 import Loader from '../../components/Loader/Loader'
 import LocPreview from '../../components/LocPreview/LocPreview'
-import homeImage from '../../assets/home_image.svg'
 import './Home.css'
 
 function Home() {
@@ -12,7 +11,7 @@ function Home() {
       <div className="page_container">
          <Banner
             page="home"
-            img={homeImage}
+            img="assets/home_image.jpg"
             text="Chez vous, partout ou ailleurs"
          />
          {isDataLoaded ? (
