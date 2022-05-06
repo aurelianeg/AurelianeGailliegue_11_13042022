@@ -3,14 +3,17 @@ import './Carousel.css'
 
 function Carousel(props) {
    let [current, setCurrent] = useState(0)
+   let [translate, setTranslate] = useState('0')
    const length = props.pictures.length
 
    const toggleClickPrevious = () => {
       setCurrent(current === 0 ? length - 1 : current - 1)
+      setTranslate('-100%')
    }
 
    const toggleClickNext = () => {
       setCurrent(current === length - 1 ? 0 : current + 1)
+      setTranslate('100%')
    }
 
    return (
@@ -21,7 +24,12 @@ function Carousel(props) {
                <div
                   className="carousel_img_container"
                   key={index}
-                  style={{ width: index === current ? '100%' : '0%' }}
+                  style={{
+                     transform:
+                        index === current
+                           ? 'translateX(0)'
+                           : 'translateX(' + translate + ')',
+                  }}
                >
                   {index === current && (
                      <img

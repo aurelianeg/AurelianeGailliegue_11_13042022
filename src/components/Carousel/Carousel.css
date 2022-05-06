@@ -11,6 +11,10 @@
    position: relative;
 }
 
+.carousel_img_container {
+   transition: all 250ms ease-in-out;
+}
+
 .carousel_img {
    width: 100%;
    object-fit: cover;
