@@ -10,7 +10,6 @@ function Home() {
    return (
       <div className="page_container">
          <Banner
-            page="home"
             img="assets/home_image.jpg"
             text="Chez vous, partout ou ailleurs"
          />

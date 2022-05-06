@@ -5,7 +5,7 @@ import './About.css'
 function About() {
    return (
       <div className="page_container">
-         <Banner page="about" img="assets/about_image.jpg" />
+         <Banner img="assets/about_image.jpg" text="" />
 
          <section className="collapses_container">
             <Collapse
