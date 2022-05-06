@@ -2,6 +2,7 @@ import { useFetch } from '../../utils/hooks/useFetch'
 import { useParams } from 'react-router-dom'
 import Loader from '../../components/Loader/Loader'
 import Carousel from '../../components/Carousel/Carousel'
+import Rating from '../../components/Rating/Rating'
 import Collapse from '../../components/Collapse/Collapse'
 import Error from '../Error/Error'
 import './Location.css'
@@ -52,7 +53,10 @@ function Location() {
                                  alt={'Photo de' + foundLocation.host.name}
                               />
                            </div>
-                           <div className="star_ratings"></div>
+                           <Rating
+                              className="star_ratings"
+                              stars={foundLocation.rating}
+                           />
                         </div>
                      </div>
                      <div className="description">

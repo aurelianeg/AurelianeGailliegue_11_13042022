@@ -1,0 +1,21 @@
+@import '../../utils/style/colors.css';
+
+.star_rating {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.star {
+   width: 30px;
+   height: 30px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.star_colored {
+   fill: var(--primary-color);
+}
+
+.star_gray {
+   fill: var(--gray-color);
+}
