@@ -50,6 +50,7 @@
    height: 25px;
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    list-style: none;
    margin: 0;
    padding: 0;
@@ -79,6 +80,7 @@
    margin-top: 7px;
    display: flex;
    flex-direction: row;
+   justify-content: flex-end;
    align-items: center;
 }
 

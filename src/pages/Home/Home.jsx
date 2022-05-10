@@ -11,7 +11,7 @@ function Home() {
       <div className="page_container">
          <Banner
             img="assets/home_image.jpg"
-            text="Chez vous, partout ou ailleurs"
+            text="Chez vous, partout et ailleurs"
          />
          {isDataLoaded ? (
             <Loader />
