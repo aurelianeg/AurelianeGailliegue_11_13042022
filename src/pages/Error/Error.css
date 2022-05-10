@@ -1,13 +1,23 @@
 @import '../../utils/style/colors.css';
 
 .page_container {
+   padding-left: 100px;
+   padding-right: 100px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
 
+@media screen and (max-width: 1023px) {
+   .page_container {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+}
+
 .error_container {
+   width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -21,14 +31,36 @@
    color: var(--primary-color);
 }
 
+@media screen and (max-width: 1023px) {
+   .error_number {
+      font-size: 96px;
+   }
+}
+
 .error_description {
+   width: 100%;
    font-size: 36px;
    font-weight: 500;
    margin-bottom: 180px;
    color: var(--primary-color);
+   text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+   .error_description {
+      width: 80%;
+      font-size: 18px;
+      margin-bottom: 120px;
+   }
 }
 
 .home_link {
    font-size: 18px;
    color: var(--primary-color);
+}
+
+@media screen and (max-width: 1023px) {
+   .home_link {
+      font-size: 14px;
+   }
 }

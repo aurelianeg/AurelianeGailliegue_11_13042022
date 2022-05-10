@@ -8,6 +8,12 @@
    margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1023px) {
+   .collapse_container {
+      margin-bottom: 20px;
+   }
+}
+
 .collapse_header {
    height: 50px;
    background-color: var(--primary-color);
@@ -19,6 +25,14 @@
    justify-content: space-between;
    align-items: center;
    cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+   .collapse_header {
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 0px;
+   }
 }
 
 .collapse_title {
@@ -33,6 +47,13 @@
 
 .collapse_title--half {
    font-size: 18px;
+}
+
+@media screen and (max-width: 1023px) {
+   .collapse_title {
+      font-size: 13px;
+      font-weight: 500;
+   }
 }
 
 .collapse_arrow {
@@ -63,6 +84,22 @@
    transform: translate(0, 0) rotate(45deg);
 }
 
+@media screen and (max-width: 1023px) {
+   .collapse_arrow--closed::before, .collapse_arrow--closed::after {
+      width: 2px;
+      height: 12px;
+      top: 9px;
+   }
+
+   .collapse_arrow--closed::before {
+      left: 13px;
+   }
+
+   .collapse_arrow--closed::after {
+      left: 15px;
+   }
+}
+
 .collapse_arrow--open::before, .collapse_arrow--open::after {
    width: 3px;
    height: 18px;
@@ -85,6 +122,22 @@
    transform: translate(0, 0) rotate(-45deg);
 }
 
+@media screen and (max-width: 1023px) {
+   .collapse_arrow--open::before, .collapse_arrow--open::after {
+      width: 2px;
+      height: 12px;
+      top: 9px;
+   }
+
+   .collapse_arrow--open::before {
+      left: 13px;
+   }
+
+   .collapse_arrow--open::after {
+      left: 15px;
+   }
+}
+
 .collapse_description {
    background-color: var(--background-color);
    padding: 20px;
@@ -92,6 +145,12 @@
    display: none;
    transform: translateY(-100%);
    transition: all 100ms ease-in-out;
+}
+
+@media screen and (max-width: 1023px) {
+   .collapse_description {
+      padding: 10px;
+   }
 }
 
 .collapse_header--open ~ .collapse_description {
@@ -111,6 +170,12 @@
 
 .collapse_text--half {
    font-size: 18px;
+}
+
+@media screen and (max-width: 1023px) {
+   .collapse_text {
+      font-size: 12px;
+   }
 }
 
 .collapse_list {

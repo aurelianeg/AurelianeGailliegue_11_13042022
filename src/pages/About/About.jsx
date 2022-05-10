@@ -5,7 +5,7 @@ import './About.css'
 function About() {
    return (
       <div className="page_container">
-         <Banner img="assets/about_image.jpg" text="" />
+         <Banner img="assets/about_image.jpg" text="" mobilewide={true} />
 
          <section className="collapses_container">
             <Collapse

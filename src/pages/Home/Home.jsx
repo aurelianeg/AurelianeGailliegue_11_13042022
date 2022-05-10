@@ -12,6 +12,7 @@ function Home() {
          <Banner
             img="assets/home_image.jpg"
             text="Chez vous, partout et ailleurs"
+            mobilewide={false}
          />
          {isDataLoaded ? (
             <Loader />

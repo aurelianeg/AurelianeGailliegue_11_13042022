@@ -1,10 +1,19 @@
 @import '../../utils/style/colors.css';
 
 .page_container {
+   padding-left: 100px;
+   padding-right: 100px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+   .page_container {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
 }
 
 .data_container {
@@ -24,17 +33,33 @@
    margin-bottom: 25px;
 }
 
+@media screen and (max-width: 1023px) {
+   .general_info {
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+   }
+}
+
 .loc_info {
    display: flex;
    flex-direction: column;
 }
 
 .loc_info_title {
+   display: flex;
+   flex-wrap: wrap;
    font-size: 36px;
    font-weight: 500;
    color: var(--primary-color);
    margin: 0;
    margin-top: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+   .loc_info_title {
+      font-size: 18px;
+      margin-top: 5px;
+   }
 }
 
 .loc_info_location {
@@ -46,8 +71,15 @@
    margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1023px) {
+   .loc_info_location {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+   }
+}
+
 .loc_info_tags {
-   height: 25px;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -70,14 +102,32 @@
    margin-right: 10px;
 }
 
+@media screen and (max-width: 1023px) {
+   .loc_info_tag {
+      height: 18px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 10px;
+      border-radius: 5px;
+   }
+}
+
 .user_info_and_stars {
+   margin-top: 7px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
 
+@media screen and (max-width: 1023px) {
+   .user_info_and_stars {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: center;
+   }
+}
+
 .user_info {
-   margin-top: 7px;
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
@@ -88,10 +138,19 @@
    width: 100px;
    font-size: 18px;
    color: var(--primary-color);
+   margin: 0;
    margin-right: 15px;
    display: flex;
    flex-wrap: wrap;
    text-align: right;
+}
+
+@media screen and (max-width: 1023px) {
+   .user_name {
+      width: 80px;
+      font-size: 12px;
+      margin-right: 10px;
+   }
 }
 
 .user_profilepicture {
@@ -101,10 +160,23 @@
    overflow: hidden;
 }
 
+@media screen and (max-width: 1023px) {
+   .user_profilepicture {
+      width: 32px;
+      height: 32px;
+   }
+}
+
 .description {
    width: 100%;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    gap: 60px;
+}
+
+@media screen and (max-width: 1023px) {
+   .description {
+      display: block;
+   }
 }

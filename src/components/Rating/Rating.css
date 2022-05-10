@@ -12,6 +12,15 @@
    margin-right: 5px;
 }
 
+@media screen and (max-width: 1023px) {
+   .star {
+      width: 15px;
+      height: 15px;
+      margin-left: 2px;
+      margin-right: 3px;
+   }
+}
+
 .star_colored {
    fill: var(--primary-color);
 }
