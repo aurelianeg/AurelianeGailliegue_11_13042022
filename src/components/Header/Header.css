@@ -36,7 +36,16 @@
    height: 100px;
    display: flex;
    flex-direction: row;
+   flex-wrap: nowrap;
    align-items: center;
+}
+
+@media screen and (max-width: 374px) {
+   .nav_container {
+      height: 60px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+   }
 }
 
 .nav_link {

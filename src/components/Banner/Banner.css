@@ -52,9 +52,23 @@
 
 @media screen and (max-width: 1023px) {
    .banner_text {
-      width: 60%;
+      font-size: 28px;
+      top: 40px;
+   }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+   .banner_text {
       font-size: 24px;
+      top: 40px;
+   }
+}
+
+@media screen and (max-width: 425px) {
+   .banner_text {
+      width: 85%;
       margin-left: 20px;
+      font-size: 24px;
       top: 30px;
    }
 }
