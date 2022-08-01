@@ -10,7 +10,7 @@ Kasa[^1] is a website for renting apartments between individuals. Users can brow
 
 The desktop and mobile designs are available on [Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR). The website is fully responsive.
 
-![Design for the apartment page](./assets/design/apartment.png 'Design for the apartment page')
+![Design for the apartment page](./src/assets/design/apartment.png 'Design for the apartment page')
 
 ### Technical constraints
 
